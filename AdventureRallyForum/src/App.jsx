@@ -1,10 +1,10 @@
-function App() {
+import Routing from "./Routing";
+import "../src/assets/Styles/App.css";
 
+function App() {
   return (
-    <>
-      <h1>Empezamos</h1>
-    </>
+    <Routing />
   )
 }
 
-export default App
+export default App;
