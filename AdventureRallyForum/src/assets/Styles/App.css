@@ -1,7 +1,4 @@
 body {
-  margin: 20px;
+  margin: 0;
+  font-family: 'Ubuntu Mono', monospace;
 }
-h1 {
-  font-family: 'Exo 2', sans-serif;
-  font-weight: 200;
-  }
