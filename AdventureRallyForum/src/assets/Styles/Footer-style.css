@@ -1,0 +1,84 @@
+.Footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  color: white;
+}
+.Footer-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 50px;
+  width: fit-content;
+  background-color:  rgb(84, 50, 0);
+  clip-path: polygon(80% 0%, 100% 100%, 0% 100%, 0% 0%);
+  padding-left: 30px;
+  padding-right: 100px;
+  user-select: none;
+}
+
+.Footer-base {
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color:  rgb(84, 50, 0);
+  user-select: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'Ubuntu Mono', monospace;;
+}
+
+.Footer-title {
+  font-weight: 200;
+  font-size: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Developer-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.Social-box {
+display: flex;
+justify-content: flex-end;
+height: 60%;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-around;
+align-items: center;
+cursor: pointer;
+}
+.Breadcrumbs-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 30px;
+  align-items: flex-end;
+}
+.Breadcrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #fff;
+}
+
+.Breadcrumbs li {
+  padding: 0 10px;
+  line-height: 40px;
+}
+
+.Breadcrumbs li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Breadcrumbs li a:hover {
+  text-decoration: underline;
+}

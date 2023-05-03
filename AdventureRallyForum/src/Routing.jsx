@@ -6,6 +6,7 @@ import Login from "./Pages/Login";
 import SingUp from "./Pages/SingUp";
 import LogOut from "./Pages/LogOut";
 import EventDetails from "./Pages/EventDetails";
+import Legal from "./Pages/Legal";
 
 const Routing = () => {
 
@@ -20,6 +21,7 @@ const Routing = () => {
           <Route path="/Login" element={<Login />} />
           <Route path="/SingUp" element={<SingUp />} />
           <Route path="/LogOut" element={<LogOut />} />
+          <Route path="/Legal" element={<Legal />} />
         </Routes>
       </BrowserRouter>
   );
