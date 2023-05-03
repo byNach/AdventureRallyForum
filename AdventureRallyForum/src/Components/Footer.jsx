@@ -13,25 +13,25 @@ const Footer = () => {
       <div className="Footer-box">
         <div className="Footer-base">
           <div className="Breadcrumbs-box">
-            <Breadcrumbs aria-label="breadcrumb">
-              <Link underline="hover" color="white" href="/">
-                Normas
-              </Link>
-              <Link underline="hover" color="white" href="/">
-                Contacto
-              </Link>
-              <Link underline="hover" color="white" href="/">
-                Sobre nosotros
-              </Link>
-            </Breadcrumbs>
+            <ul className="Breadcrumbs">
+              <li>
+                <a href="/">Normas</a>
+              </li>
+              <li>
+                <a href="/">Contacto</a>
+              </li>
+              <li>
+                <a href="/">Sobre nosotros</a>
+              </li>
+            </ul>
           </div>
           <div className="Developer-box">
             <p>Copyright ©2023 ByNach</p>
           </div>
-            <div className="Social-box">
-              <LinkedInIcon color="white" fontSize="large" />
-              <InstagramIcon color="white" fontSize="large" />
-            </div>
+          <div className="Social-box">
+            <LinkedInIcon color="white" fontSize="large" />
+            <InstagramIcon color="white" fontSize="large" />
+          </div>
         </div>
       </div>
     </div>

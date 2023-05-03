@@ -25,10 +25,10 @@
   align-items: center;
   flex-direction: row;
   background-color:  rgb(84, 50, 0);
-  font-family: 'Exo 2';
   user-select: none;
   padding-left: 30px;
   padding-right: 30px;
+  font-family: 'Ubuntu Mono', monospace;;
 }
 
 .Footer-title {
@@ -59,6 +59,26 @@ cursor: pointer;
   flex-direction: column;
   justify-content: space-around;
   margin-right: 30px;
-  font-family: 'Exo 2';
   align-items: flex-end;
+}
+.Breadcrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #fff;
+}
+
+.Breadcrumbs li {
+  padding: 0 10px;
+  line-height: 40px;
+}
+
+.Breadcrumbs li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Breadcrumbs li a:hover {
+  text-decoration: underline;
 }
