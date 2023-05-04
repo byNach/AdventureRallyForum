@@ -1,0 +1,107 @@
+.Event-card {
+  width: 40%;
+  min-width: 400px;
+  height: fit-content;
+  background-color: rgb(247, 247, 247);
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.Data-image-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 150px;
+  border-bottom: 2px solid black;
+}
+
+.Data {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(60, 60, 60);
+  width: 30%;
+  position: relative;
+  color: white;
+}
+
+.Num-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 36px;
+}
+
+.Bar {
+  position: relative;
+  width: 60%;
+  border: 1px solid white;
+}
+
+.Month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.Location-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  font-size: 22px;
+}
+
+.Event-image {
+  width: 100%;
+  position: relative;
+  background-image: url("../Images/Des_ride-por-el-desierto-para-motoristas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Description {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.Event-title {
+  font-size: 30px;
+  margin-bottom: 0%;
+}
+
+.Event-description-text {
+  font-size: 16px;
+  text-justify: auto;
+}
+
+.Ver-mas {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  justify-content: space-between;
+}
+
+.Triangle {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  clip-path: polygon(0% 100%, 0% 0%, 100% 100%);
+}
+
+.Ver-mas-button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
