@@ -1,5 +1,5 @@
 import Event from "../Components/Event";
-import "../assets/Styles/Styled-pages/Events-list-style.css";
+import "../assets/Styles/Styled-components/Events-list-style.css";
 
 const EventList = () => {
   return (
