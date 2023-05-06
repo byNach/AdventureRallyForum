@@ -1,4 +1,4 @@
-import "../assets/Styles/Header-style.css";
+import "../assets/Styles/Styled-components/Header-style.css";
 import helmet from "../assets/Images/icons8-helmet-64.png";
 import { Link } from "react-router-dom";
 

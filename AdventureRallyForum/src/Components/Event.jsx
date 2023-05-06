@@ -1,4 +1,4 @@
-import "../assets/Styles/Event-style.css";
+import "../assets/Styles/Styled-components/Event-style.css";
 import PlaceIcon from "@mui/icons-material/Place";
 
 const Event = () => {

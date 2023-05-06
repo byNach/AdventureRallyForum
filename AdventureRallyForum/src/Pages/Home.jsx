@@ -3,7 +3,7 @@ import Searcher from "../Components/Searcher";
 import EventList from "../Components/Events-List";
 import Banner from "../Components/Banner-aside";
 import Footer from "../Components/Footer";
-import "../assets/Styles/Home-style.css";
+import "../assets/Styles/Styled-Pages/Home-style.css";
 
 const Home = () => {
   return (

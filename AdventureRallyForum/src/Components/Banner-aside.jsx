@@ -1,4 +1,4 @@
-import "../assets/Styles/Banner-aside.css";
+import "../assets/Styles/Styled-Components/Banner-aside.css";
 
 const Banner = () => {
   return (

@@ -17,20 +17,32 @@
 }
 
 .Left-aside {
-
+width: 20%;
 }
 
 .Central-home {
   width: 50%;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 30px;
-  margin-right: 30px;
   background-color: black;
   padding: 30px;
 }
 
 .Right-aside {
+width: 20%;
+}
 
+@media screen and (max-width: 800px) {
+  .Content-home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Left-aside, .Right-aside, .Central-home {
+    width: 90%;
+  margin-bottom: 30px;
+  }
 }

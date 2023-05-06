@@ -1,4 +1,4 @@
-import "../assets/Styles/Searcher-style.css";
+import "../assets/Styles/Styled-components/Searcher-style.css";
 
 const Searcher = () => {
   return (

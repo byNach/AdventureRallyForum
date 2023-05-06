@@ -1,4 +1,4 @@
-import "../assets/Styles/Footer-style.css";
+import "../assets/Styles/Styled-Components/Footer-style.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
