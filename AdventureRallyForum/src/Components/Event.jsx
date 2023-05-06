@@ -1,12 +1,14 @@
-import "../assets/Styles/Event-style.css";
+import "../assets/Styles/Styled-components/Event-style.css";
 import PlaceIcon from "@mui/icons-material/Place";
+import Data from "../Data";
 
 const Event = () => {
+
   return (
     <div className="Event-card">
       <div className="Data-image-row">
         <div className="Data">
-          <div className="Num-day">21-28</div>
+          <div className="Num-day">{Data[1].difficulty}</div>
           <div className="Bar"></div>
           <div className="Month">OCT</div>
           <div className="Location-box">

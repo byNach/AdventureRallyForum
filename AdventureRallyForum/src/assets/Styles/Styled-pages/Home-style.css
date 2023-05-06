@@ -1,0 +1,48 @@
+.Base-Home {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../Images/offroad-background.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+}
+
+.Content-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+}
+
+.Left-aside {
+width: 20%;
+}
+
+.Central-home {
+  width: 50%;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  padding: 30px;
+}
+
+.Right-aside {
+width: 20%;
+}
+
+@media screen and (max-width: 800px) {
+  .Content-home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Left-aside, .Right-aside, .Central-home {
+    width: 90%;
+  margin-bottom: 30px;
+  }
+}

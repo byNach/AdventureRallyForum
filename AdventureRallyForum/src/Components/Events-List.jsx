@@ -1,7 +1,16 @@
+import Event from "../Components/Event";
+import "../assets/Styles/Styled-components/Events-list-style.css";
+
 const EventList = () => {
   return (
-    <h1>EventList</h1>
-  )
-}
+    <>
+      <Event />
+      <Event />
+      <Event />
+      <Event />
+      <Event />
+    </>
+  );
+};
 
 export default EventList;
