@@ -1,14 +1,18 @@
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import EventList from "../Components/Events-List";
+import "../assets/Styles/Events-style.css";
 
 const Events = () => {
   return (
-    <>
-    <h1>Events</h1>
-    <Header />
-    <Footer />
-  </>
-  )
-}
+    <div className="Base-Events">
+      <Header />
+      <div className="Central-Events">
+        <EventList />
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
 export default Events;

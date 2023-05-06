@@ -1,7 +1,11 @@
+import "../assets/Styles/Searcher-style.css";
+
 const Searcher = () => {
   return (
-    <h1>Searcher</h1>
-  )
-}
+    <div className="Searcher-box">
+    Searcher
+    </div>
+  );
+};
 
 export default Searcher;

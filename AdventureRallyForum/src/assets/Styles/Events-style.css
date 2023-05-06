@@ -1,0 +1,17 @@
+.Base-Events {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.Central-Events {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
