@@ -1,6 +1,6 @@
 import "../assets/Styles/Styled-components/Event-style.css";
 import PlaceIcon from "@mui/icons-material/Place";
-import Data from "../JsonDATA";
+import Data from "../Data";
 
 const Event = () => {
 

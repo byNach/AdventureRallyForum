@@ -1,4 +1,5 @@
-[
+const Data =
+  [
     {
       "name": "Real Way to Dakar",
       "title": "Real Way to Dakar",
@@ -317,3 +318,5 @@
       "url": "https://www.facebook.com/OlivoBook/"
     }
   ]
+
+export default Data;
