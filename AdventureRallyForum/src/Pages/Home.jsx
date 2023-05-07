@@ -1,5 +1,5 @@
 import Header from "../Components/Header";
-import Searcher from "../Components/Searcher";
+import SearcherGroup from "../Components/Search-components/SearcherGroup";
 import EventList from "../Components/Events-List";
 import Banner from "../Components/Banner-aside";
 import Footer from "../Components/Footer";
@@ -11,7 +11,7 @@ const Home = () => {
       <Header />
       <div className="Content-home">
         <div className="Left-aside">
-          <Searcher />
+          <SearcherGroup />
         </div>
         <div className="Central-home">
           <EventList />
