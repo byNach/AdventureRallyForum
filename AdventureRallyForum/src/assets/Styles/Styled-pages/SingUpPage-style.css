@@ -2,10 +2,10 @@
   display: flex;
   height: 100vh;
   flex-direction: column;
-  background-image: url("../../Images/amber-kipp-EoD9riW8j04-unsplash.jpg");
+  background-image: url("../../Images/2013-ktm-1190-adventure-r-action-07.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 120%;
   justify-content: space-between;
 }
 

@@ -1,11 +1,10 @@
 .HomePage {
   display: flex;
   flex-direction: column;
-  background-image: url("../../Images/iulia-topan-rKDgAtP4ugA-unsplash.jpg");
+  background-image: url("../../Images/benjamin-hassel-oh14CAfw6bw-unsplash.jpg");
   background-repeat: no-repeat;
   background-position:center;
   background-size:cover;
-  justify-content: space-between;
 }
 
 .Content-home {
