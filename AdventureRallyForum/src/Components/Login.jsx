@@ -3,7 +3,7 @@ import "../assets/Styles/Styled-components/Login-style.css";
 const Login = () => {
   return (
     <form className="Login-base">
-      <div className="Login-title">Login</div>
+      <div className="Login-title">Log In</div>
       <div className="Inputs-base">
         <div className="Top-input-tetx">Usuario</div>
         <input
@@ -18,7 +18,7 @@ const Login = () => {
           placeholder="Introduce una contraseña"
         ></input>
       </div>
-      <button className="Submit-button">Login</button>
+      <button className="Submit-button">Log In</button>
       <div className="Or-option">Accede con tu cuenta de Google</div>
       <div className="google-btn">
         <div className="google-icon-wrapper">
@@ -28,7 +28,7 @@ const Login = () => {
           />
         </div>
         <div className="btn-text">
-          Sign in with google
+          Log In with google
         </div>
       </div>
       <div className="Not-registered-user">Aún no tienes cuenta?</div>

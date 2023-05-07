@@ -2,9 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Forum from "./Pages/Forum";
 import Events from "./Pages/Events";
-import Login from "./Pages/Login";
-import SingUp from "./Pages/SingUp";
-import LogOut from "./Pages/LogOut";
+import LogInPage from "./Pages/LogInPage";
+import SingInPage from "./Pages/SingInPage";
 import EventDetails from "./Pages/EventDetails";
 import Legal from "./Pages/Legal";
 
@@ -18,9 +17,8 @@ const Routing = () => {
           <Route path="/Forum" element={<Forum />} />
           <Route path="/Events" element={<Events />} />
           <Route path="/EventDetails" element={<EventDetails />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/SingUp" element={<SingUp />} />
-          <Route path="/LogOut" element={<LogOut />} />
+          <Route path="/LogInPage" element={<LogInPage />} />
+          <Route path="/SingInPage" element={<SingInPage />} />
           <Route path="/Legal" element={<Legal />} />
         </Routes>
       </BrowserRouter>
