@@ -23,6 +23,7 @@ const VehicleList = () => {
           label="Tipo de vehículo"
           onChange={handleChange}
         >
+          <MenuItem value={null}>-Seleccionar-</MenuItem>
           <MenuItem value={1}>Trail</MenuItem>
           <MenuItem value={2}>Enduro</MenuItem>
           <MenuItem value={3}>ATV</MenuItem>

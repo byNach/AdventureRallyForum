@@ -13,7 +13,7 @@ const MonthList = () => {
   };
 
   return (
-    <Box sx={{ minWidth: 120, mb: 2}}>
+    <Box sx={{ minWidth: 120, mb: 2 }}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">Mes</InputLabel>
         <Select
@@ -23,6 +23,7 @@ const MonthList = () => {
           label="Mes"
           onChange={handleChange}
         >
+          <MenuItem value={null}>-Seleccionar-</MenuItem>
           <MenuItem value={1}>Enero</MenuItem>
           <MenuItem value={2}>Febrero</MenuItem>
           <MenuItem value={3}>Marzo</MenuItem>

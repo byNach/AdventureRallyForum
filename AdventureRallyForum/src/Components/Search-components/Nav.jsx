@@ -23,6 +23,7 @@ const NavList = () => {
           label="Navegación"
           onChange={handleChange}
         >
+          <MenuItem value={null}>-Seleccionar-</MenuItem>
           <MenuItem value={1}>GPS</MenuItem>
           <MenuItem value={2}>Roadbook</MenuItem>
         </Select>

@@ -23,6 +23,7 @@ const CountryList = () => {
           label="País"
           onChange={handleChange}
         >
+          <MenuItem value={null}>-Seleccionar-</MenuItem>
           <MenuItem value={1}>España</MenuItem>
           <MenuItem value={2}>Portugal</MenuItem>
           <MenuItem value={3}>Marruecos</MenuItem>
