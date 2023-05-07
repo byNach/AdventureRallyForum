@@ -61,21 +61,6 @@ const Data =
       "url": "https://www.adventureoffroad.es/eventos/iv-gueras-de-te-abulta-2/"
     },
     {
-      "name": "Area 4x4",
-      "title": "Xtreme 200/500",
-      "start_date": "28/01",
-      "end_date": "28/01",
-      "duration_days": 4,
-      "duration_nights": 1,
-      "location": "TBD",
-      "continent": "ES",
-      "difficulty": 1,
-      "navigation": "Roadbook/GPS",
-      "vehicles": "Solo trail",
-      "distance_km": 42,
-      "url": "https://area4x4.es/xtreme-trail-area-4x4/"
-    },
-    {
       "name": "Horizons Adventure",
       "title": "R3 - Evora",
       "start_date": "11/02",
