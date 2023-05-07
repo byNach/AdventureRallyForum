@@ -1,7 +1,24 @@
-.Searcher-box {
-  width: auto;
-  min-width: 250px;
-  min-height: 600px;
-  background-color: blue;
-  margin-bottom: 30px;
+.Group-base {
+  font-family: 'Roboto';
+  background-color: transparent;
+}
+
+.Group-title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  background-color: black;
+  margin-bottom: 40px;
+}
+
+.Filter-button-box {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+}
+
+.Filter-button {
+  font-size: 22px;
+  margin: 0;
 }
