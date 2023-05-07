@@ -7,7 +7,7 @@ import "../assets/Styles/Styled-Pages/Home-style.css";
 
 const Home = () => {
   return (
-    <div className="Base-home">
+    <div className="HomePage">
       <Header />
       <div className="Content-home">
         <div className="Left-aside">
