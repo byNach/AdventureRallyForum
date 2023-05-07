@@ -1,6 +1,6 @@
 .Group-base {
   font-family: 'Roboto';
-  background-color: transparent;
+  background: linear-gradient(45deg, transparent 5%, #000000 5%);
 }
 
 .Group-title {
@@ -11,6 +11,10 @@
   background: linear-gradient(45deg, transparent 5%, #000000 5%);
   padding: 5px;
   margin-bottom: 40px;
+}
+
+.Group-filters-box {
+  margin: 10px;
 }
 
 .Filter-button-box {

@@ -27,7 +27,9 @@ const Event = () => {
         </p>
       </div>
       <div className="Ver-mas">
-        <div className="Triangle"></div>
+        <div className="Icons">
+          
+        </div>
         <button className="Ver-mas-button">Ver más</button>
       </div>
     </div>

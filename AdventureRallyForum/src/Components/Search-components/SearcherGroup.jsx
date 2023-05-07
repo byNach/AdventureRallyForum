@@ -10,11 +10,13 @@ const SearcherGroup = () => {
   return (
     <div className="Group-base">
       <div className="Group-title">Buscador</div>
+      <div className="Group-filter-box">
         <MonthList />
         <CountryList />
         <StateList />
         <VehicleList />
         <NavList />
+      </div>
       <div className="Filter-button-box">
         <button className="Filter-button">Filtrar</button>
       </div>
