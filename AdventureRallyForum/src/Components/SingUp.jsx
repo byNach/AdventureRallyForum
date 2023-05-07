@@ -1,9 +1,9 @@
-import "../assets/Styles/Styled-components/SingIn-style.css";
+import "../assets/Styles/Styled-components/SingUp-style.css";
 
-const SingIn = () => {
+const SingUp = () => {
   return (
-    <form className="SingIn-base">
-      <div className="SingIn-title">Sing In</div>
+    <form className="SingUp-base">
+      <div className="SingUp-title">Sing Up</div>
       <div className="Inputs-base">
         <div className="Top-input-tetx">Usuario</div>
         <input type="text" className="Input" placeholder="Introduce tu email"></input>
@@ -12,9 +12,9 @@ const SingIn = () => {
         <div className="Top-input-tetx">Repeat Password</div>
         <input type="password" className="Input" placeholder="Repite la contraseña"></input>
       </div>
-      <button className="Submit-button">Sing In</button>
+      <button className="Submit-button">Sing Up</button>
       <div className="Or-option">Registrate con tu cuenta de Google</div>
-      <div className="Social-icons-SingIn"></div>
+      <div className="Social-icons-SingUp"></div>
       <div className="google-btn">
         <div className="google-icon-wrapper">
           <img
@@ -23,11 +23,11 @@ const SingIn = () => {
           />
         </div>
         <div className="btn-text">
-          Sign in with google
+          Sign Up with google
         </div>
       </div>
     </form>
   );
 };
 
-export default SingIn; 
+export default SingUp; 

@@ -1,4 +1,4 @@
-.SingIn-base {
+.SingUp-base {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +11,7 @@
   box-shadow: 3px, 3px, 3px, black;
 }
 
-.SingIn-title {
+.SingUp-title {
   font-size: 40px;
   letter-spacing: 2px;
   font-weight: bolder;
@@ -66,5 +66,3 @@
   user-select: none;
   margin-bottom: 10px;
 }
-
-.Social-icons-SingIn {}
