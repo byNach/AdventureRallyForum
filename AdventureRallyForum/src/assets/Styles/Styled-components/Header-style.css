@@ -43,15 +43,14 @@
 }
 
 .Login {
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
+  width: 100px;
+  height: 50px;
+  font-size: 24px;
   background: linear-gradient(35deg, transparent 15%, #ffffff 5%);
   border: 0;
   font-family: 'Bebas Neue', cursive;
-  font-size: 22px;
-  color: #000000;
+  font-size: 30px;
+  color: #FF013C;
   letter-spacing: 3px;
   outline: transparent;
   position: relative;
@@ -59,14 +58,16 @@
 }
 
 .Sing-up {
+  width: 100px;
+  height: 35px;
+  font-size: 22px;
   margin-right: 30px;
   padding-left: 20px;
-  padding-right: 10px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
   background: linear-gradient(35deg, transparent 15%, #ffffff 5%);
   border: 0;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 22px;
-  color: #000000;
+  color: #FF013C;
   letter-spacing: 3px;
   outline: transparent;
   position: relative;
@@ -81,7 +82,6 @@
   align-items: flex-start;
   height: 70px;
   width: fit-content;
-  padding-right: 30px;
   padding-left: 120px;
   background-color: rgb(0, 0, 0);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 30% 100%);
@@ -187,11 +187,11 @@ button:hover::after {
 .Foro-button {
   width: 100px;
   height: 50px;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .Other-button {
-  width: 130px;
+  width: 100px;
   height: 35px;
-  font-size: 18px;
+  font-size: 22px;
 }

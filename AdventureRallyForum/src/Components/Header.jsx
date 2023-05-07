@@ -23,8 +23,8 @@ const Header = () => {
           </div>
         </div>
       <div className="Nav-down">
-        <div className="Sing-up">Sing Up</div>
-        <div className="Login">Login</div>
+        <button className="Sing-up">Sing Up</button>
+        <button className="Login">Login</button>
         </div>
     </div>
   );
