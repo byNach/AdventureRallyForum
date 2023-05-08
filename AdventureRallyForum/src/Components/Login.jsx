@@ -5,6 +5,7 @@ import "../assets/Styles/Styled-components/Login-style.css";
 
 const Login = () => {
   const auth = useAuth();
+  console.log(auth.user.email);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
