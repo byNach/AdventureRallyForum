@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height:fit-content;
+  width: 350px;
+  height: fit-content;
   padding: 30px;
   color: white;
   background: linear-gradient(45deg, transparent 8%, #000000 5%);

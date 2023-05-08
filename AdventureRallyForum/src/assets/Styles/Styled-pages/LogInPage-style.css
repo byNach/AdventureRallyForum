@@ -2,10 +2,10 @@
   display: flex;
   height: 100vh;
   flex-direction: column;
-  background-image: url("../../Images/divjot-ratra-kFttVr9ULSY-unsplash.jpg");
+  background-image: url("../../Images/nikolay-dimitrov-i7FJLwf-h5k-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   justify-content: space-between;
 }
 

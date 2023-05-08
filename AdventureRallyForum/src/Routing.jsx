@@ -3,7 +3,7 @@ import Home from "./Pages/Home";
 import Forum from "./Pages/Forum";
 import Events from "./Pages/Events";
 import LogInPage from "./Pages/LogInPage";
-import SingInPage from "./Pages/SingInPage";
+import SingUpPage from "./Pages/SingUpPage";
 import EventDetails from "./Pages/EventDetails";
 import Legal from "./Pages/Legal";
 
@@ -18,7 +18,7 @@ const Routing = () => {
           <Route path="/Events" element={<Events />} />
           <Route path="/EventDetails" element={<EventDetails />} />
           <Route path="/LogInPage" element={<LogInPage />} />
-          <Route path="/SingInPage" element={<SingInPage />} />
+          <Route path="/SingUpPage" element={<SingUpPage />} />
           <Route path="/Legal" element={<Legal />} />
         </Routes>
       </BrowserRouter>
