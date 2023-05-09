@@ -5,7 +5,7 @@ import Events from "./Pages/Events";
 import LogInPage from "./Pages/LogInPage";
 import SingUpPage from "./Pages/SingUpPage";
 import EventDetails from "./Pages/EventDetails";
-import Legal from "./Pages/Legal";
+import InfoPage from "./Pages/InfoPage";
 
 const Routing = () => {
 
@@ -19,7 +19,7 @@ const Routing = () => {
           <Route path="/EventDetails" element={<EventDetails />} />
           <Route path="/LogInPage" element={<LogInPage />} />
           <Route path="/SingUpPage" element={<SingUpPage />} />
-          <Route path="/Legal" element={<Legal />} />
+          <Route path="/Info" element={<InfoPage />} />
         </Routes>
       </BrowserRouter>
   );
