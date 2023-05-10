@@ -151,21 +151,6 @@ const Data =
       "url": "http://www.goismotoclube.pt/index.php/raide-tt-2021"
     },
     {
-      "name": "Murcia OffRoad",
-      "event": "Cuadrangular",
-      "start_date": "01/03",
-      "end_date": "01/03",
-      "duration": "9",
-      "num_participants": "3",
-      "location": "Murcia",
-      "country": "ES",
-      "num_stages": "1",
-      "navigation": "Roadbook/GPS/Tripy",
-      "vehicles": "Enduro/Trail",
-      "price": "670-790",
-      "url": "https://murciaoffroad.com"
-    },
-    {
       "organizer": "BeTrail",
       "name": "Ruta Roadbook - La Selva",
       "start_date": "04/03",
