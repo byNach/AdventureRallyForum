@@ -5,7 +5,7 @@
   background-image: url("../../Images/nikolay.jpg");
   background-position: left;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   justify-content: space-between;
 }
 

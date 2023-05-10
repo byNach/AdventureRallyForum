@@ -14,13 +14,14 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  max-width: 60%;
+  width: 60%;
   margin: auto;
   padding: 30px;
   color: white;
 }
 
 .Card-info {
+  width: 100%;
   background: linear-gradient(45deg, transparent 3%, #000000 3%);
   padding: 30px;
   margin-top: 20px;
