@@ -1,18 +1,18 @@
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import SingUp from "../Components/SingUp";
-import "../assets/Styles/Styled-pages/SingUpPage-style.css";
+import SignUp from "../Components/SignUp";
+import "../assets/Styles/Styled-pages/SignUpPage-style.css";
 
-const SingUpPage = () => {
+const SignUpPage = () => {
   return (
-    <div className="SingUpPage">
+    <div className="SignUpPage">
     <Header />
     <div className="Center-box">
-      <SingUp />
+      <SignUp />
     </div>
     <Footer />
   </div>
   )
 }
 
-export default SingUpPage;
+export default SignUpPage;

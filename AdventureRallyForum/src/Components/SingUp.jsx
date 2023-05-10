@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useAuth } from "../Context/AuthContext";
-import "../assets/Styles/Styled-components/SingUp-style.css";
+import "../assets/Styles/Styled-components/SignUp-style.css";
 
-const SingUp = () => {
+const SignUp = () => {
   const auth = useAuth();
   const [emailRegister, setEmailRegister] = useState("");
   const [passwordRegister, setPasswordRegister] = useState("");
@@ -12,8 +12,8 @@ const SingUp = () => {
     auth.register(emailRegister, passwordRegister);
   };
   return (
-    <form className="SingUp-base">
-      <div className="SingUp-title">Sing Up</div>
+    <form className="SignUp-base">
+      <div className="SignUp-title">Sign Up</div>
       <div className="Inputs-base">
         <div className="Top-input-tetx">Usuario</div>
         <input
@@ -38,10 +38,10 @@ const SingUp = () => {
         ></input>
       </div>
       <button className="Submit-button" onClick={(e) => handleRegister(e)}>
-        Sing Up
+        Sign Up
       </button>
       <div className="Or-option">Registrate con tu cuenta de Google</div>
-      <div className="Social-icons-SingUp"></div>
+      <div className="Social-icons-SignUp"></div>
       <div className="google-btn">
         <div className="google-icon-wrapper">
           <img
@@ -55,4 +55,4 @@ const SingUp = () => {
   );
 };
 
-export default SingUp;
+export default SignUp;
