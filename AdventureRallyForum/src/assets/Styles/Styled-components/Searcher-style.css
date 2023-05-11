@@ -1,20 +1,30 @@
 .Group-base {
   font-family: 'Roboto';
-  background: linear-gradient(45deg, transparent 5%, #ffffff 5%);
+  background: linear-gradient(45deg, transparent 5%, #000000 5%);
 }
 
 .Group-title {
   font-size: 28px;
   text-align: center;
-  margin-bottom: 20px;
   color: white;
   background: linear-gradient(45deg, transparent 5%, #000000 5%);
-  padding: 5px;
+  padding-top: 40px;
   margin-bottom: 40px;
 }
 
-.Group-filters-box {
-  margin: 10px;
+.Group-filter-box {
+  margin: 20px;
+  background-color: #ffffff;
+}
+
+.MuiBox {
+  background-color: #000000;
+}
+
+.searcher-icons {
+  position: relative;
+  width: 25px;
+  margin-right: 10px;
 }
 
 .Filter-button-box {
