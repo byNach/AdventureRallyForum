@@ -6,13 +6,13 @@ import "../assets/Styles/Styled-pages/SignUpPage-style.css";
 const SignUpPage = () => {
   return (
     <div className="SignUpPage">
-    <Header />
-    <div className="Center-box">
-      <SignUp />
+      <Header />
+      <div className="Center-box">
+        <SignUp />
+      </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
-  )
-}
+  );
+};
 
 export default SignUpPage;
