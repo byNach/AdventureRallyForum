@@ -110,8 +110,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  background: linear-gradient(45deg, transparent 5%, #000000 5%);
-  height: 70px;
+  background: linear-gradient(45deg, transparent 4%, #000000 4%);
+  height: 60px;
 }
 
 .Icons {
@@ -127,7 +127,7 @@
 }
 
 .Icons-style {
-  width: 45px;
+  height: 45px;
   margin-right: 10px;
 }
 
