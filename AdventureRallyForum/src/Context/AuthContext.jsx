@@ -6,6 +6,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   signOut,
+  updateProfile,
   onAuthStateChanged
 } from "firebase/auth";
 
@@ -33,15 +34,15 @@ const suscribed = onAuthStateChanged(auth, (currentUser) =>{
 })
 return () => suscribed();
   },[])
-  const register = async (email, password) => {
-    const response = await createUserWithEmailAndPassword(
-      auth,
-      email,
-      password,
-      user
-    );
+
+  const register = async (email, password, displayName) => {
+    const response = await createUserWithEmailAndPassword(auth, email, password);
+    const user = response.user;
+    await updateProfile(user, { displayName: displayName });
+    setUser(user);
     console.log(response);
   };
+  
   const login = async (email, password) => {
     const response = await signInWithEmailAndPassword(auth, email, password);
     console.log(response);
