@@ -30,7 +30,6 @@
   padding-left: 30px;
   padding-right: 30px;
   font-family: 'Ubuntu Mono', monospace;
-  ;
 }
 
 .Footer-title {
@@ -47,16 +46,6 @@
   justify-content: center;
 }
 
-.Social-box {
-  display: flex;
-  justify-content: flex-end;
-  height: 60%;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  cursor: pointer;
-}
 
 .Breadcrumbs-box {
   display: flex;
@@ -77,13 +66,18 @@
 .Breadcrumbs li {
   padding: 0 10px;
   line-height: 40px;
+  
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
-
-.Breadcrumbs li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.Breadcrumbs li a:hover {
-  text-decoration: underline;
+.Social-box {
+  display: flex;
+  width: 100px;
+  height: 60%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
 }

@@ -24,8 +24,8 @@ const NavList = () => {
           onChange={handleChange}
         >
           <MenuItem value={null}>-Seleccionar-</MenuItem>
-          <MenuItem value={1}>GPS</MenuItem>
-          <MenuItem value={2}>Roadbook</MenuItem>
+          <MenuItem value={1}><img className="searcher-icons" src="../../src/Assets/Images/Icons/smartphone-b.png"></img>GPS</MenuItem>
+          <MenuItem value={2}><img className="searcher-icons" src="../../src/Assets/Images/Icons/roadbook-b.png"></img>Roadbook</MenuItem>
         </Select>
       </FormControl>
     </Box>

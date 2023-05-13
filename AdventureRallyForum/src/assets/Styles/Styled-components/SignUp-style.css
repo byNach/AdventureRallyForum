@@ -1,0 +1,81 @@
+.SignUp-base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 50px;
+  color: white;
+  background: linear-gradient(45deg, transparent 8%, #000000 5%);
+  box-shadow: 3px, 3px, 3px, black;
+}
+
+.Title-box {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.SignUp-title {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+  text-align: center;
+  user-select: none;
+}
+
+.Inputs-base {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: self-start;
+  padding: 30px;
+}
+
+.Top-input-text {
+  user-select: none;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.Input {
+  width: 100%;
+  border: 0;
+  font-size: 18px;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+.Input:focus {
+  border: none;
+  box-shadow: none;
+  border-bottom: 2px solid white;
+}
+
+.Submit-button {
+  user-select: none;
+  width: 130px;
+  height: 35px;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.ErrorMessage {
+  text-align: center;
+  font-size: 16px;
+  color: yellow;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.Or-option {
+  user-select: none;
+  margin-bottom: 10px;
+}

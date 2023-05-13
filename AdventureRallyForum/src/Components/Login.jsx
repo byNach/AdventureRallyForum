@@ -1,17 +1,19 @@
 import { useState } from "react";
 import { useAuth } from "../Context/AuthContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../assets/Styles/Styled-components/Login-style.css";
 
 const Login = () => {
   const auth = useAuth();
+  const navigate = useNavigate(); // add this line
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    auth.login(email, password);
-  };
+    await auth.login(email, password); // wait for the login to complete
+    navigate('/Home'); // navigate programmatically
+  }
 
   const handleGoogle = (e) => {
     e.preventDefault;
@@ -53,8 +55,8 @@ const Login = () => {
         </div>
       </div>
       <div className="Not-registered-user">Aún no tienes cuenta?</div>
-      <Link to="/SingUpPage">
-        <div className="Redirect-singUp-button">Sing Up</div>
+      <Link to="/SignUpPage">
+        <div className="Redirect-signUp-button">Sign Up</div>
       </Link>
     </form>
   );

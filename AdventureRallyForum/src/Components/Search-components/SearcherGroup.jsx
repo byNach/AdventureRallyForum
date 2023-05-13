@@ -9,7 +9,7 @@ import "../../assets/Styles/Styled-components/Searcher-style.css";
 const SearcherGroup = () => {
   return (
     <div className="Group-base">
-      <div className="Group-title">Buscador</div>
+      <div className="Group-title">Buscador de eventos</div>
       <div className="Group-filter-box">
         <MonthList />
         <CountryList />
