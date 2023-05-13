@@ -30,23 +30,23 @@ const Event = () => {
           ></img>
           <img
             className="Icons-style"
-            src="../../src/assets/Images/Icons/motocross.png"
+            src="../../src/assets/Images/Icons/motocross-w.png"
           ></img>
           <img
             className="Icons-style"
-            src="../../src/assets/Images/Icons/motorcycle.png"
+            src="../../src/assets/Images/Icons/adv-icon-w.png"
           ></img>
           <img
             className="Icons-style"
-            src="../../src/assets/Images/Icons/atv.png"
+            src="../../src/assets/Images/Icons/atv-w.png"
           ></img>
           <img
             className="Icons-style"
-            src="../../src/assets/Images/Icons/open-book.png"
+            src="../../src/assets/Images/Icons/roadbook-w.png"
           ></img>
           <img
             className="Icons-style"
-            src="../../src/assets/Images/Icons/smartphone.png"
+            src="../../src/assets/Images/Icons/smartphone-w.png"
           ></img>
         </div>
         <button className="Ver-mas-button">Ver más</button>
