@@ -24,9 +24,9 @@ const VehicleList = () => {
           onChange={handleChange}
         >
           <MenuItem value={null}>-Seleccionar-</MenuItem>
-          <MenuItem value={1}>Trail</MenuItem>
-          <MenuItem value={2}>Enduro</MenuItem>
-          <MenuItem value={3}>ATV</MenuItem>
+          <MenuItem value={1}><img className="searcher-icons" src="../../src/Assets/Images/Icons/adv-icon-b.png"></img>Trail</MenuItem>
+          <MenuItem value={2}><img className="searcher-icons" src="../../src/Assets/Images/Icons/motocross-b.png"></img>Enduro</MenuItem>
+          <MenuItem value={3}><img className="searcher-icons" src="../../src/Assets/Images/Icons/atv-b.png"></img>ATV</MenuItem>
         </Select>
       </FormControl>
     </Box>

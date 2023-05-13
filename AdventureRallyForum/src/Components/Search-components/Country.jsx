@@ -24,9 +24,12 @@ const CountryList = () => {
           onChange={handleChange}
         >
           <MenuItem value={null}>-Seleccionar-</MenuItem>
-          <MenuItem value={1}>España</MenuItem>
-          <MenuItem value={2}>Portugal</MenuItem>
-          <MenuItem value={3}>Marruecos</MenuItem>
+          <MenuItem value={1}><img className="searcher-icons" src="../../src/Assets/Images/Icons/spain.png"></img>España</MenuItem>
+          <MenuItem value={2}><img className="searcher-icons" src="../../src/Assets/Images/Icons/portugal.png"></img>Portugal</MenuItem>
+          <MenuItem value={3}><img className="searcher-icons" src="../../src/Assets/Images/Icons/morocco.png"></img>Marruecos</MenuItem>
+          <MenuItem value={4}><img className="searcher-icons" src="../../src/Assets/Images/Icons/tunisia.png"></img>Tunez</MenuItem>
+          <MenuItem value={5}><img className="searcher-icons" src="../../src/Assets/Images/Icons/emiratos.png"></img>Emiratos</MenuItem>
+          <MenuItem value={6}><img className="searcher-icons" src="../../src/Assets/Images/Icons/senegal.png"></img>Senegal</MenuItem>
         </Select>
       </FormControl>
     </Box>
