@@ -22,7 +22,7 @@
   font-size: 46px;
   padding-left: 30px;
   padding-right: 10px;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 30px;
   text-decoration: none;
 }
@@ -49,16 +49,14 @@ a {
   margin: 0;
 }
 
-.LogIn {
-  width: 120px;
+.LogIn-Out {
+  width: 130px;
   height: 50px;
-  font-size: 24px;
+  font-size: 30px;
   background: linear-gradient(45deg, transparent 10%, #ffffff 10%);
   border: 0;
   font-family: 'Bebas Neue', cursive;
-  font-size: 30px;
   color: #FF013C;
-  letter-spacing: 3px;
   outline: transparent;
   position: relative;
   cursor: pointer;
@@ -86,14 +84,32 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: flex-start;
-  height: 70px;
+  align-items:first baseline;
+  height: 60px;
   padding-right: 10PX;
   width: fit-content;
   padding-left: 120px;
   background-color: rgb(0, 0, 0);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 30% 100%);
   user-select: none;
+}
+
+.User-box {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(45deg, transparent 15%, #000000 5%);
+  cursor: pointer;
+}
+
+.User-icon {
+  width: 30px;
+  margin-right: 8px;
+}
+
+.User-name {
+  color: #fff;
+  font-size: 22px;
+  margin-right: 30px;
 }
 
 button,
@@ -192,7 +208,7 @@ button:hover::after {
 }
 
 .Foro-button {
-  width: 120px;
+  width: 130px;
   height: 50px;
   font-size: 30px;
 }

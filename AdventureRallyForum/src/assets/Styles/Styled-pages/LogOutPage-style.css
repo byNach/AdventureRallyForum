@@ -1,6 +1,6 @@
-.SignUpPage {
+.LogOutPage {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;  
   flex-direction: column;
   background-image: url("../../Images/2013-ktm-1190-adventure-r-action-07.jpg");
   background-position: center;
