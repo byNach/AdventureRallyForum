@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "adventurerallyforum-e0907",
+  "private_key_id": "75a499bdb85fe5e60ea49b2f28b389424155db63",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDLJ//3l61cjDvU\nUO+5muB8a4GjQWiI/mcAihEc9S5cC98m852LypXzBdohcpfx8zyRX8ShfLjQIqGS\nEkJdTwtRFady/pO/C2QN3lB39sD23KdSNDcOAlgNhL1CXwoidefMA0OoZq3KclTF\n5511XS/BCOZeV9ee5G/GktKskPsl2P7CQqN6reYg9RhA+031IEyks+gP6aeHCnrD\nv4D0ij04pJgpZ7qop4NXE2Dfx51gdxfsWvcuSqv+PGp+mS53OeLCbYjcHHADGwto\nLNviv8L33iZeSLJPgTPaSSnIfjyhkYVnG9XLoWUDQF+d9yHswzOr6ZJNH3rVD9U8\n8eMW04a/AgMBAAECggEAN5VzID/8q8SmnfmjDWpFn2UerBc6TbklX21nL0AZ9g89\nd//RjCzaiAqC2wHqdsVxPekw+GoSesfu4vNh+vukggPls73ZmLy6HF1GMPxvYVuP\n4BrvMUMM6m32BlHQiQsvZ49BFLM7O5e6gAdV+oWLikowFYH9ObkQqAkF4Tctr/XJ\nOMte1/XrWKxG5e5hKqeFbaLFyb44k24F+CQqJfxEUhYY994MwYV62x4T4IogABrI\njubkEHK7RKu3zmJyDmL8NQ2cVTF8vNqUaQUrHYUGnPP1rDhkyYR1y41QQd1MQqTk\njmRQ9/xj5ov1bDLLvkM5eQ6rftHffcvg+W6I7weUmQKBgQDm7yg0Gl5bThFh3/Zh\nuu0GFV4VPt60dp2vbXCenKZHjMh/bZO/xT3sMNfV7G2gn2GT+sStLxC0irNFcnXb\nGOsAoWgj6i3pEfOZvCWzGk+KwRshWlhG9Pr8CcBz11Lo0hU36Jr6zTnSatmylqf4\nMAVokRD3XAmVFW2Fp5M/vHNNhQKBgQDhNP3qNdq8+GLa0zdyjwYsbkum+p37tOpa\nt9xSX1ZMpDcycm4Tl/SV3sNcBxi0lLqIgKZk2NpX+Nb9eGHaN3IYmFJmD7r1sp3T\nIdVGEcbr7rZN3juWXw+SdXIOUFiDHGEH53vL13OyBRChD+3sbmPS5WQj6GZfR1hu\nUTuY5O0kcwKBgD2NaS3aCWRUvpVT2Jvb8uk4MMeA5mM7anQju2zLXBaeE6LDVio7\nLHIT4rOGPQIe+Sc0I8/1R4KXpYjRJVCsp5aXbuaDuJDy0/caCwJd9O2K4uxU5Eql\naXBcOQunTNX5iOZJ/WTz5oGLMVNEjKi+Q/LHF7qWsYcnGvYQ4FKQrDrxAoGBAKdU\nLk01En9RtnGMeig+KIIeuUsp7vQ0aeRZs/PoLkDnyrNK3orkXrB0QYdBJpQV5brC\ni99mWGUA2Qyfw2TVyYqIssBuc6VWv3k+LC7RypFGXmHg+zkxDGrvpH0KKZnRHi83\nSX4daTMeHErvgQIoyzbJhexAIsAsTII7DSL/BUwNAoGAFrqc414HWPaU+lZOduqc\nYzID8E/98LPaBbmsvJnuo7k9qnazAAkfr32aq4Zq52KLS6p+EtdmpJ398ZAlkzt7\n8O7tNzqbXxOQLe7P6u5r+AOgccrdtEyQJThby0c0xcxho3JMPc/cwuD1Ifer1Zq/\nqS1Zabfz7U0n/0uu8AkZI8M=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-ghvrw@adventurerallyforum-e0907.iam.gserviceaccount.com",
+  "client_id": "105006630483523704562",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ghvrw%40adventurerallyforum-e0907.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
