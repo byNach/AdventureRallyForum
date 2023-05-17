@@ -1,3 +1,20 @@
+.Charging-card {
+  min-width: 400px;
+  max-width: 1200px;
+}
+
+.Charging-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #000000;
+  color: white;
+  font-size: 36px;
+  border-bottom: 2px solid white;
+}
+
 .Event-card {
   margin-bottom: 30px;
   min-width: 400px;
@@ -8,7 +25,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  height: 250px;
+  justify-content: space-between;
+  height: fit-content;
   background-image: url("../../Images/wp6962604-adventure-motorcycle-wallpapers.jpg");
   background-position: center;
   background-size: cover;
@@ -18,13 +36,14 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: fit-content;
   height: fit-content;
   position: relative;
   padding-left: 10px;
   padding-top: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
   color: rgb(255, 255, 255);
 }
 
@@ -33,11 +52,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90px;
-  height: 90px;
+  width: fit-content;
+  height: fit-content;
   background-color: #000000;
-  border-radius: 100px;
   margin-bottom: 5px;
+  padding: 10px;
 }
 
 .Num-day {
@@ -55,34 +74,56 @@
   align-items: center;
   position: relative;
   font-size: 26px;
-  margin-bottom: 10px;
 }
 
 .Location-box {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: fit-content;
+  text-align: center;
+  max-width: 120px;
   height: fit-content;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-bottom: 5px;
   font-size: 18px;
   background-color: #000000;
   border-radius: 20px;
 }
 
-.Event-image {
-  width: 100%;
-  position: relative;
-  background-image: url("");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.Event-name-logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+
+.Event-name-box {
+  display: flex;
+  align-items: flex-end;
+  font-size: 26px;
+  color: white;
+  background-color: #000000;
+  padding: 10px;
+  height: fit-content;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.Organizer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  width: 50%;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .Description {
@@ -123,7 +164,7 @@
   align-items: center;
   width: 100%;
   margin: auto;
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 .Icons-style {
@@ -138,4 +179,8 @@
   font-size: 14px;
   margin: auto;
   margin-right: 0;
+}
+
+a {
+  color: white;
 }
