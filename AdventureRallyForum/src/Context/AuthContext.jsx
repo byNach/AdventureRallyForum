@@ -22,6 +22,7 @@ export const useAuth = () => {
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState("");
+
   useEffect(() => {
     const suscribed = onAuthStateChanged(auth, (currentUser) => {
       if (!currentUser) {
@@ -43,7 +44,6 @@ export function AuthProvider({ children }) {
     const user = response.user;
     await updateProfile(user, { displayName: displayName });
     setUser(user);
-    console.log(response);
   };
 
   const login = async (email, password) => {
@@ -58,23 +58,25 @@ export function AuthProvider({ children }) {
 
   const logOut = async () => {
     const response = await signOut(auth);
-    console.log(response);
   };
 
   const [dataFromApi, setDataFromApi] = useState("");
+
   useEffect(() => {
-    fetch("https://api.jsonbin.io/v3/b/6460aaaeb89b1e22999d587d", {
+     fetch("https://api.jsonbin.io/v3/b/6460aaaeb89b1e22999d587d", {
       headers: {
         "X-Access-Key":
           "$2b$10$sdMUwuLZjgupQD/etQ5dPOYweFHn3CdP2GkkRKcalXeh/uePRqt8O",
       },
     })
       .then((response) => response.json())
-      .then((data) => console.log(data))
-      .then((data) => setDataFromApi(data))
-      .catch((error) => console.error(error));
+      .then((data) => {
+        setDataFromApi(data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }, []);
-
 
   return (
     <authContext.Provider
