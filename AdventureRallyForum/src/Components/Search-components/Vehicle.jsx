@@ -6,10 +6,10 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 const VehicleList = () => {
-  const [age, setAge] = React.useState("");
+  const [vehicle, setVehicle] = React.useState("");
 
   const handleChange = (event) => {
-    setAge(event.target.value);
+    setVehicle(event.target.value);
   };
 
   return (
@@ -19,14 +19,14 @@ const VehicleList = () => {
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={age}
+          value={vehicle}
           label="Tipo de vehículo"
           onChange={handleChange}
         >
           <MenuItem value={null}>-Seleccionar-</MenuItem>
-          <MenuItem value={1}><img className="searcher-icons" src="../../src/Assets/Images/Icons/adv-icon-b.png"></img>Trail</MenuItem>
-          <MenuItem value={2}><img className="searcher-icons" src="../../src/Assets/Images/Icons/motocross-b.png"></img>Enduro</MenuItem>
-          <MenuItem value={3}><img className="searcher-icons" src="../../src/Assets/Images/Icons/atv-b.png"></img>ATV</MenuItem>
+          <MenuItem value={"ENDURO"}><img className="searcher-icons" src="../../src/Assets/Images/Icons/motocross-b.png"></img>Enduro</MenuItem>
+          <MenuItem value={"TRAIL"}><img className="searcher-icons" src="../../src/Assets/Images/Icons/adv-icon-b.png"></img>Trail</MenuItem>
+          <MenuItem value={"ATV"}><img className="searcher-icons" src="../../src/Assets/Images/Icons/atv-b.png"></img>ATV</MenuItem>
         </Select>
       </FormControl>
     </Box>

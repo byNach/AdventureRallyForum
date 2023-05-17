@@ -6,10 +6,10 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 const MonthList = () => {
-  const [age, setAge] = React.useState("");
+  const [month, setMonth] = React.useState("");
 
   const handleChange = (event) => {
-    setAge(event.target.value);
+    setMonth(event.target.value);
   };
 
   return (
@@ -19,23 +19,23 @@ const MonthList = () => {
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={age}
+          value={month}
           label="Mes"
           onChange={handleChange}
         >
           <MenuItem value={null}>-Seleccionar-</MenuItem>
-          <MenuItem value={1}>Enero</MenuItem>
-          <MenuItem value={2}>Febrero</MenuItem>
-          <MenuItem value={3}>Marzo</MenuItem>
-          <MenuItem value={4}>Abril</MenuItem>
-          <MenuItem value={5}>Mayo</MenuItem>
-          <MenuItem value={6}>Junio</MenuItem>
-          <MenuItem value={7}>Julio</MenuItem>
-          <MenuItem value={8}>Agosto</MenuItem>
-          <MenuItem value={9}>Septiembre</MenuItem>
-          <MenuItem value={10}>Octubre</MenuItem>
-          <MenuItem value={11}>Noviembre</MenuItem>
-          <MenuItem value={12}>Diciembre</MenuItem>
+          <MenuItem value={"ENE"}>Enero</MenuItem>
+          <MenuItem value={"FEB"}>Febrero</MenuItem>
+          <MenuItem value={"MAR"}>Marzo</MenuItem>
+          <MenuItem value={"ABR"}>Abril</MenuItem>
+          <MenuItem value={"MAY"}>Mayo</MenuItem>
+          <MenuItem value={"JUN"}>Junio</MenuItem>
+          <MenuItem value={"JUL"}>Julio</MenuItem>
+          <MenuItem value={"AGO"}>Agosto</MenuItem>
+          <MenuItem value={"SEP"}>Septiembre</MenuItem>
+          <MenuItem value={"OCT"}>Octubre</MenuItem>
+          <MenuItem value={"NOV"}>Noviembre</MenuItem>
+          <MenuItem value={"DIC"}>Diciembre</MenuItem>
         </Select>
       </FormControl>
     </Box>
