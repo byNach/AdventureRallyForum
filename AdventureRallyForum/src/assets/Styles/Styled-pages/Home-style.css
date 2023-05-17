@@ -35,7 +35,7 @@
   min-width: 200px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .Content-home {
     flex-direction: column;
     justify-content: center;
@@ -43,9 +43,13 @@
   }
 
   .Left-aside,
-  .Right-aside,
   .Central-home {
     width: 90%;
     margin-bottom: 30px;
+
+  }
+
+  .Right-aside {
+    width: 30%;
   }
 }

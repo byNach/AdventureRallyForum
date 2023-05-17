@@ -84,9 +84,9 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items:first baseline;
+  align-items:stretch;
   height: 60px;
-  padding-right: 10PX;
+  padding-right: 10px;
   width: fit-content;
   padding-left: 120px;
   background-color: rgb(0, 0, 0);
@@ -103,6 +103,7 @@ a {
 
 .User-icon {
   width: 30px;
+  height: 30px;
   margin-right: 8px;
 }
 
