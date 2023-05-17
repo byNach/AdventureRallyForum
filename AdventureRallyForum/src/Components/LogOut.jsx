@@ -1,6 +1,5 @@
-import { useAuth } from "../Context/AuthContext";
 import { getAuth, signOut } from "firebase/auth";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../assets/Styles/Styled-components/LogOut-style.css";
 
 const LogOut = () => {
@@ -11,11 +10,10 @@ const LogOut = () => {
     e.preventDefault();
     signOut(auth)
       .then(() => {
-        console.log("Sign-out successful.");
         navigate("/Home");
       })
       .catch((error) => {
-        console.log("An error happened.");
+        console.log("An error happened.", error);
       });
   };
 
