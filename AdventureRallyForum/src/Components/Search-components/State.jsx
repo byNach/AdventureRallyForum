@@ -27,7 +27,7 @@ const StateList = () => {
           label="Comunidad autónoma"
           onChange={handleChange}
         >
-          <MenuItem value={""}>-Seleccionar-</MenuItem>
+          <MenuItem defaultValue={""}>-Seleccionar-</MenuItem>
           <MenuItem value={"ANDALUCIA"}>Andalucía</MenuItem>
           <MenuItem value={"ARAGON"}>Aragón</MenuItem>
           <MenuItem value={"ASTURIAS"}>Asturias</MenuItem>

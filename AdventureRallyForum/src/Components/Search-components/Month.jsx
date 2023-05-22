@@ -26,7 +26,7 @@ const MonthList = () => {
           label="Mes"
           onChange={handleChange}
         >
-          <MenuItem value={""}>-Seleccionar-</MenuItem>
+          <MenuItem defaultValue={""}>-Seleccionar-</MenuItem>
           <MenuItem value={"ENE"}>Enero</MenuItem>
           <MenuItem value={"FEB"}>Febrero</MenuItem>
           <MenuItem value={"MAR"}>Marzo</MenuItem>

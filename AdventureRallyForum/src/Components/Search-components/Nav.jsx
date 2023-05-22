@@ -25,7 +25,7 @@ const NavList = () => {
           label="Navegación"
           onChange={handleChange}
         >
-          <MenuItem value={""}>-Seleccionar-</MenuItem>
+          <MenuItem defaultValue={""}>-Seleccionar-</MenuItem>
           <MenuItem value={"GPS"}><img className="searcher-icons" src="../../src/Assets/Images/Icons/smartphone-b.png"></img>GPS</MenuItem>
           <MenuItem value={"ROADBOOK"}><img className="searcher-icons" src="../../src/Assets/Images/Icons/roadbook-b.png"></img>Roadbook</MenuItem>
         </Select>
