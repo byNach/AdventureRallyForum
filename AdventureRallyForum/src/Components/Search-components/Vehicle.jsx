@@ -1,12 +1,14 @@
-import * as React from "react";
+import { useContext } from "react";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import {FilterContext} from "../../Context/FilterContext";
+
 
 const VehicleList = () => {
-  const [vehicle, setVehicle] = React.useState("");
+  const {vehicle, setVehicle} = useContext(FilterContext);
 
   const handleChange = (event) => {
     setVehicle(event.target.value);
@@ -23,7 +25,7 @@ const VehicleList = () => {
           label="Tipo de vehículo"
           onChange={handleChange}
         >
-          <MenuItem value={null}>-Seleccionar-</MenuItem>
+          <MenuItem value={""}>-Seleccionar-</MenuItem>
           <MenuItem value={"ENDURO"}><img className="searcher-icons" src="../../src/Assets/Images/Icons/motocross-b.png"></img>Enduro</MenuItem>
           <MenuItem value={"TRAIL"}><img className="searcher-icons" src="../../src/Assets/Images/Icons/adv-icon-b.png"></img>Trail</MenuItem>
           <MenuItem value={"ATV"}><img className="searcher-icons" src="../../src/Assets/Images/Icons/atv-b.png"></img>ATV</MenuItem>

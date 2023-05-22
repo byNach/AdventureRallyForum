@@ -1,12 +1,14 @@
-import * as React from "react";
+import { useContext } from "react";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import {FilterContext} from "../../Context/FilterContext";
+
 
 const StateList = () => {
-  const [state, setState] = React.useState("");
+  const {state, setState} = useContext(FilterContext);
 
   const handleChange = (event) => {
     setState(event.target.value);
@@ -25,7 +27,7 @@ const StateList = () => {
           label="Comunidad autónoma"
           onChange={handleChange}
         >
-          <MenuItem value={null}>-Seleccionar-</MenuItem>
+          <MenuItem value={""}>-Seleccionar-</MenuItem>
           <MenuItem value={"ANDALUCIA"}>Andalucía</MenuItem>
           <MenuItem value={"ARAGON"}>Aragón</MenuItem>
           <MenuItem value={"ASTURIAS"}>Asturias</MenuItem>

@@ -1,12 +1,15 @@
-import * as React from "react";
+import { useContext } from "react";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import {FilterContext} from "../../Context/FilterContext";
+
 
 const MonthList = () => {
-  const [month, setMonth] = React.useState("");
+  const {month, setMonth} = useContext(FilterContext);
+
 
   const handleChange = (event) => {
     setMonth(event.target.value);
@@ -23,7 +26,7 @@ const MonthList = () => {
           label="Mes"
           onChange={handleChange}
         >
-          <MenuItem value={null}>-Seleccionar-</MenuItem>
+          <MenuItem value={""}>-Seleccionar-</MenuItem>
           <MenuItem value={"ENE"}>Enero</MenuItem>
           <MenuItem value={"FEB"}>Febrero</MenuItem>
           <MenuItem value={"MAR"}>Marzo</MenuItem>
