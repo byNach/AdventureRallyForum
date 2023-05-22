@@ -1,11 +1,9 @@
 import "../assets/Styles/Styled-components/Event-style.css";
 import PlaceIcon from "@mui/icons-material/Place";
-import { useAuth } from "../Context/AuthContext";
 
 const Event = (props) => {
-  const auth = useAuth();
 
-  return auth.dataFromApi === "" ? null : (
+  return (
     <div className="Event-card" key={props.EVENT}>
       <div className="Data-image-row">
         <div className="Day-location">
