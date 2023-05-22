@@ -13,8 +13,9 @@
 }
 
 .Group-filter-box {
-  margin: 20px;
+  margin: 30px;
   background-color: #ffffff;
+  border: 8px solid white;
 }
 
 .MuiBox {

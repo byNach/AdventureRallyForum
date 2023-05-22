@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useAuth } from "../Context/AuthContext";
-import { getAuth, updateProfile } from "firebase/auth";
 import { Link } from "react-router-dom";
 import "../assets/Styles/Styled-components/SignUp-style.css";
 

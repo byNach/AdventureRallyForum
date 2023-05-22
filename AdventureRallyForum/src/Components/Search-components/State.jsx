@@ -1,15 +1,17 @@
-import * as React from "react";
+import { useContext } from "react";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import {FilterContext} from "../../Context/FilterContext";
+
 
 const StateList = () => {
-  const [age, setAge] = React.useState("");
+  const {state, setState} = useContext(FilterContext);
 
   const handleChange = (event) => {
-    setAge(event.target.value);
+    setState(event.target.value);
   };
 
   return (
@@ -21,30 +23,30 @@ const StateList = () => {
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={age}
+          value={state}
           label="Comunidad autónoma"
           onChange={handleChange}
         >
-          <MenuItem value={null}>-Seleccionar-</MenuItem>
-          <MenuItem value={1}>Andalucía</MenuItem>
-          <MenuItem value={2}>Aragón</MenuItem>
-          <MenuItem value={3}>Asturias</MenuItem>
-          <MenuItem value={4}>Baleares</MenuItem>
-          <MenuItem value={5}>Canarias</MenuItem>
-          <MenuItem value={6}>Cantabria</MenuItem>
-          <MenuItem value={7}>Castilla-La Mancha</MenuItem>
-          <MenuItem value={8}>Castilla y León</MenuItem>
-          <MenuItem value={9}>Cataluña</MenuItem>
-          <MenuItem value={10}>Ceuta</MenuItem>
-          <MenuItem value={11}>Comunidad Valenciana</MenuItem>
-          <MenuItem value={12}>Extremadura</MenuItem>
-          <MenuItem value={13}>Galicia</MenuItem>
-          <MenuItem value={14}>La Rioja</MenuItem>
-          <MenuItem value={15}>Madrid</MenuItem>
-          <MenuItem value={16}>Melilla</MenuItem>
-          <MenuItem value={17}>Murcia</MenuItem>
-          <MenuItem value={18}>Navarra</MenuItem>
-          <MenuItem value={19}>País Vasco</MenuItem>
+          <MenuItem value={""}>-Seleccionar-</MenuItem>
+          <MenuItem value={"ANDALUCIA"}>Andalucía</MenuItem>
+          <MenuItem value={"ARAGON"}>Aragón</MenuItem>
+          <MenuItem value={"ASTURIAS"}>Asturias</MenuItem>
+          <MenuItem value={"BALEARES"}>Baleares</MenuItem>
+          <MenuItem value={"CANARIAS"}>Canarias</MenuItem>
+          <MenuItem value={"CANTABRIA"}>Cantabria</MenuItem>
+          <MenuItem value={"CASTILLAMANCHA"}>Castilla-La Mancha</MenuItem>
+          <MenuItem value={"CASTILLALEON"}>Castilla y León</MenuItem>
+          <MenuItem value={"CATALUNYA"}>Cataluña</MenuItem>
+          <MenuItem value={"CEUTA"}>Ceuta</MenuItem>
+          <MenuItem value={"VALENCIA"}>Comunidad Valenciana</MenuItem>
+          <MenuItem value={"EXTREMADURA"}>Extremadura</MenuItem>
+          <MenuItem value={"GALICIA"}>Galicia</MenuItem>
+          <MenuItem value={"RIOJA"}>La Rioja</MenuItem>
+          <MenuItem value={"MADRID"}>Madrid</MenuItem>
+          <MenuItem value={"MELILLA"}>Melilla</MenuItem>
+          <MenuItem value={"MURCIA"}>Murcia</MenuItem>
+          <MenuItem value={"NAVARRA"}>Navarra</MenuItem>
+          <MenuItem value={"PAISVASCO"}>País Vasco</MenuItem>
         </Select>
       </FormControl>
     </Box>

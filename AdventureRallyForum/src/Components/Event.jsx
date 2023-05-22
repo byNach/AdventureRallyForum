@@ -4,7 +4,6 @@ import { useAuth } from "../Context/AuthContext";
 
 const Event = (props) => {
   const auth = useAuth();
-  console.log(props);
 
   return auth.dataFromApi === "" ? null : (
     <div className="Event-card" key={props.EVENT}>

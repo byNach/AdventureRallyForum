@@ -1,15 +1,17 @@
-import * as React from "react";
+import { useContext } from "react";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import {FilterContext} from "../../Context/FilterContext";
+
 
 const NavList = () => {
-  const [age, setAge] = React.useState("");
+  const {nav, setNav} = useContext(FilterContext);
 
   const handleChange = (event) => {
-    setAge(event.target.value);
+    setNav(event.target.value);
   };
 
   return (
@@ -19,13 +21,13 @@ const NavList = () => {
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={age}
+          value={nav}
           label="Navegación"
           onChange={handleChange}
         >
-          <MenuItem value={null}>-Seleccionar-</MenuItem>
-          <MenuItem value={1}><img className="searcher-icons" src="../../src/Assets/Images/Icons/smartphone-b.png"></img>GPS</MenuItem>
-          <MenuItem value={2}><img className="searcher-icons" src="../../src/Assets/Images/Icons/roadbook-b.png"></img>Roadbook</MenuItem>
+          <MenuItem value={""}>-Seleccionar-</MenuItem>
+          <MenuItem value={"GPS"}><img className="searcher-icons" src="../../src/Assets/Images/Icons/smartphone-b.png"></img>GPS</MenuItem>
+          <MenuItem value={"ROADBOOK"}><img className="searcher-icons" src="../../src/Assets/Images/Icons/roadbook-b.png"></img>Roadbook</MenuItem>
         </Select>
       </FormControl>
     </Box>
