@@ -13,7 +13,7 @@ export function FilterContextProvider(props) {
   const [vehicle, setVehicle] = useState("");
   const [onlyFilteredEvents, setOnlyFilteredEvents] = useState("");
 
-  const Prueba = () => {
+  const Filtra = () => {
    
     const filteredEvents = auth.dataFromApi.record.filter((event) => {
       const monthMatch = !month || (event["START-MONTH"] === month || event["END-MONTH"] ===month);
@@ -53,7 +53,7 @@ export function FilterContextProvider(props) {
   console.log(eventsFilterPassed);
 
   return (
-    <FilterContext.Provider value={{ ...selectionStates, Prueba, eventsFilterPassed }}>
+    <FilterContext.Provider value={{ ...selectionStates, Filtra, eventsFilterPassed }}>
       {props.children}
     </FilterContext.Provider>
   );

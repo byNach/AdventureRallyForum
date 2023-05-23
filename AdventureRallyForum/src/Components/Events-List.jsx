@@ -10,24 +10,27 @@ const EventList = () => {
   const { eventsFilterPassed } = useContext(FilterContext);
   console.log(eventsFilterPassed);
 
-  return auth.dataFromApi === "" ? (
-    <div className="Charging-card">
-      <div className="Charging-row">Cargando eventos...</div>
-      <div className="Ver-mas">
-        <div className="Icons">
-          <img
-            className="Icons-style"
-            src="../../src/assets/Images/Icons/wheele.png"
-          ></img>
+  return (
+    <div className="event-list-container">
+      {auth.dataFromApi === "" ? (
+        <div className="Charging-card">
+          <div className="Charging-row">Cargando eventos...</div>
+          <div className="Ver-mas">
+            <div className="Icons">
+              <img
+                className="Icons-style"
+                src="../../src/assets/Images/Icons/wheele.png"
+                alt=""
+              ></img>
+            </div>
+          </div>
         </div>
-      </div>
+      ) : eventsFilterPassed.length === 0 ? (
+        <>{auth.dataFromApi.record.map((e, index) => Event(e, index))}</>
+      ) : (
+        <>{eventsFilterPassed.map((e, index) => Event(e, index))}</>
+      )}
     </div>
-  ) : (
-    eventsFilterPassed.length === 0 ? (
-      <>{auth.dataFromApi.record.map((e, index) => Event(e, index))};</>
-    ) : (
-      <>{eventsFilterPassed.map((e, index) => Event(e, index))};</>
-    )
   );
 };
 
