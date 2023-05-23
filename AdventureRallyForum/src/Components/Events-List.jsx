@@ -25,12 +25,10 @@ const EventList = () => {
             </div>
           </div>
         </div>
+      ) : eventsFilterPassed.length === 0 ? (
+        <>{auth.dataFromApi.record.map((e, index) => Event(e, index))}</>
       ) : (
-        <div className="event-list">
-          {eventsFilterPassed.length === 0
-            ? auth.dataFromApi.record.map((e, index) => Event(e, index))
-            : eventsFilterPassed.map((e, index) => Event(e, index))}
-        </div>
+        <>{eventsFilterPassed.map((e, index) => Event(e, index))}</>
       )}
     </div>
   );

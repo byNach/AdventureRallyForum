@@ -8,10 +8,10 @@ import { FilterContext } from "../../Context/FilterContext";
 import "../../assets/Styles/Styled-components/Searcher-style.css";
 
 const SearcherGroup = () => {
-  const { Prueba } = useContext(FilterContext);
+  const { Filtra } = useContext(FilterContext);
 
   const handleClick = () => {
-    Prueba();
+    Filtra();
   };
 
   return (
