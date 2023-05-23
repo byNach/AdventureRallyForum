@@ -5,12 +5,13 @@ export const FilterContext = createContext();
 
 export function FilterContextProvider(props) {
   const auth = useAuth();
-
+  
   const [month, setMonth] = useState("");
   const [country, setCountry] = useState("");
   const [nav, setNav] = useState("");
   const [state, setState] = useState("");
   const [vehicle, setVehicle] = useState("");
+  const [onlyFilteredEvents, setOnlyFilteredEvents] = useState("");
 
   const Prueba = () => {
    
@@ -25,17 +26,15 @@ export function FilterContextProvider(props) {
         event["ATV"] === vehicle;
       const navMatch = !nav || event["ROADBOOK"] === nav || event["GPS"] === nav;
   
-      // Retornar verdadero si todos los estados coinciden
       return monthMatch && countryMatch && stateMatch && vehicleMatch && navMatch;
     });
   
     if (filteredEvents.length === 0){
       console.log("No hay eventos");
     }
-    console.log(filteredEvents);
+    setOnlyFilteredEvents(filteredEvents)
   };
   
-
   const selectionStates = {
     country,
     month,
@@ -49,10 +48,12 @@ export function FilterContextProvider(props) {
     setVehicle,
   };
 
-  console.log(selectionStates);
+  const eventsFilterPassed = onlyFilteredEvents;
+
+  console.log(eventsFilterPassed);
 
   return (
-    <FilterContext.Provider value={{ ...selectionStates, Prueba }}>
+    <FilterContext.Provider value={{ ...selectionStates, Prueba, eventsFilterPassed }}>
       {props.children}
     </FilterContext.Provider>
   );
