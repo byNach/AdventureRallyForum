@@ -30,8 +30,21 @@
 
 .Filter-button-box {
   display: flex;
-  justify-content: end;
+  justify-content: space-evenly;
   height: 50px;
+}
+
+.Reset-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 25px;
+  font-size: 18px;
+  margin: 0;
+  background: linear-gradient(45deg, transparent 10%, #ffeb10 10%);
+  color: #000000;
 }
 
 .Filter-button {
@@ -40,7 +53,7 @@
   justify-content: center;
   align-items: center;
   width: 100px;
-  height: 30px;
-  font-size: 18px;
+  height: 35px;
+  font-size: 22px;
   margin: 0;
 }

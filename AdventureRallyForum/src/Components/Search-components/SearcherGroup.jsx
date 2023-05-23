@@ -8,10 +8,14 @@ import { FilterContext } from "../../Context/FilterContext";
 import "../../assets/Styles/Styled-components/Searcher-style.css";
 
 const SearcherGroup = () => {
-  const { Filtra } = useContext(FilterContext);
+  const { Reset, Filtra } = useContext(FilterContext);
 
-  const handleClick = () => {
+  const handleClickFiltra = () => {
     Filtra();
+  };
+
+  const handleClickReset = () => {
+    Reset();
   };
 
   return (
@@ -25,7 +29,10 @@ const SearcherGroup = () => {
         <NavList />
       </div>
       <div className="Filter-button-box">
-        <button className="Filter-button" onClick={handleClick}>
+      <button className="Reset-button" onClick={handleClickReset}>
+          Reset
+        </button>
+        <button className="Filter-button" onClick={handleClickFiltra}>
           Filtrar
         </button>
       </div>

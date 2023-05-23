@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { useAuth } from "../Context/AuthContext";
 
 export const FilterContext = createContext();
@@ -35,6 +35,19 @@ export function FilterContextProvider(props) {
     setOnlyFilteredEvents(filteredEvents)
   };
   
+  const Reset = () => {
+    setCountry("");
+    setMonth("");
+    setNav("");
+    setState("");
+    setVehicle("");
+    setOnlyFilteredEvents("");
+    useEffect(() => {
+      Filtra()
+    }, [])
+    
+  }
+  
   const selectionStates = {
     country,
     month,
@@ -53,7 +66,7 @@ export function FilterContextProvider(props) {
   console.log(eventsFilterPassed);
 
   return (
-    <FilterContext.Provider value={{ ...selectionStates, Filtra, eventsFilterPassed }}>
+    <FilterContext.Provider value={{ ...selectionStates, Reset, Filtra, eventsFilterPassed }}>
       {props.children}
     </FilterContext.Provider>
   );
