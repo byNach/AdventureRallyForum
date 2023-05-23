@@ -1,9 +1,14 @@
 import "../assets/Styles/Styled-components/Events-list-style.css";
 import { useAuth } from "../Context/AuthContext";
+import { useContext } from "react";
+import { FilterContext } from "../Context/FilterContext";
+
 import Event from "./Event";
 
 const EventList = () => {
   const auth = useAuth();
+  const { eventsFilterPassed } = useContext(FilterContext);
+  console.log(eventsFilterPassed);
 
   return auth.dataFromApi === "" ? (
     <div className="Charging-card">
@@ -18,7 +23,11 @@ const EventList = () => {
       </div>
     </div>
   ) : (
-    <>{auth.dataFromApi.record.map((e, index) => Event(e, index))};</>
+    eventsFilterPassed.length === 0 ? (
+      <>{auth.dataFromApi.record.map((e, index) => Event(e, index))};</>
+    ) : (
+      <>{eventsFilterPassed.map((e, index) => Event(e, index))};</>
+    )
   );
 };
 
