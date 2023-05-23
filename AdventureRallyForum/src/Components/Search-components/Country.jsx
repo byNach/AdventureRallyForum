@@ -24,7 +24,7 @@ const {country, setCountry} = useContext(FilterContext);
           label="País"
           onChange={handleChange}
         >
-          <MenuItem value={""}>-Seleccionar-</MenuItem>
+          <MenuItem defaultValue={""}>-Seleccionar-</MenuItem>
           <MenuItem value={"SPAIN"}>
             <img
               className="searcher-icons"
