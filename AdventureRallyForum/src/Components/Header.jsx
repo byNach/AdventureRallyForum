@@ -19,9 +19,9 @@ const Header = () => {
           <Link to="/Events">
             <button className="Other-button">EVENTOS</button>
           </Link>
-          <Link to="/Forum">
+          <a href="https://adventurerallyforum.flarum.cloud/" target="_blank" rel="noreferrer">
             <button className="Foro-button">FORO</button>
-          </Link>
+          </a>
         </div>
       </div>
       <div className="Nav-down">
@@ -50,9 +50,9 @@ const Header = () => {
           <Link to="/Events">
             <button className="Other-button">EVENTOS</button>
           </Link>
-          <Link to="/Forum">
+          <a href="https://adventurerallyforum.flarum.cloud/" target="_blank" rel="noreferrer">
             <button className="Foro-button">FORO</button>
-          </Link>
+          </a>
         </div>
       </div>
       <div className="Nav-down">
