@@ -1,6 +1,7 @@
 .HomePage {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   background-image: url("../../Images/benjamin-hassel-oh14CAfw6bw-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -13,6 +14,7 @@
   justify-content: space-around;
   flex-wrap: nowrap;
   margin-bottom: 30px;
+  margin-top: 180px;
 }
 
 .Left-aside {
@@ -37,6 +39,7 @@
 .Central-home {
   width: 50%;
   min-width: 500px;
+  max-height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;

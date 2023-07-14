@@ -2,11 +2,11 @@
   display: flex;
   height: 100vh;
   flex-direction: column;
+  justify-content: center;
   background-image: url("../../Images/nikolay.jpg");
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: space-between;
 }
 
 .Center-box {
