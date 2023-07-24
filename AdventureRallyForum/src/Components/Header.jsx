@@ -1,5 +1,6 @@
 import "../assets/Styles/Styled-components/Header-style.css";
 import helmet from "../assets/Images/Icons/icons8-helmet-64.png";
+import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from "react-router-dom";
 import { useAuth } from "../Context/AuthContext";
 
@@ -53,6 +54,9 @@ const Header = () => {
           <a href="https://adventurerallyforum.flarum.cloud/" target="_blank" rel="noreferrer">
             <button className="Foro-button">FORO</button>
           </a>
+          <div className="MenuIcon-burger">
+            <MenuIcon />
+          </div>
         </div>
       </div>
       <div className="Nav-down">
