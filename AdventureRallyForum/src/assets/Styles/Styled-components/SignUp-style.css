@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: fit-content;
+  width: 350px;
   height: fit-content;
   padding: 50px;
   color: white;
@@ -78,4 +78,20 @@
 .Or-option {
   user-select: none;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .SignUp-base {
+    width: 90vw;
+    padding: 10px;
+  }
+
+  .SignUp-title {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  .Inputs-base {
+    padding: 0;
+  }
 }
