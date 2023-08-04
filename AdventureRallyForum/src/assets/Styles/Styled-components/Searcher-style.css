@@ -40,10 +40,10 @@
   justify-content: center;
   align-items: center;
   width: 100px;
-  height: 25px;
-  font-size: 18px;
+  height: 36px;
+  font-size: 22px;
   margin: 0;
-  background: linear-gradient(45deg, transparent 10%, #ffeb10 10%);
+  background: linear-gradient(45deg, transparent 15%, #ffeb10 5%);
   color: #000000;
 }
 

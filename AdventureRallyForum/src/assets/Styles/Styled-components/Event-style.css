@@ -1,5 +1,4 @@
 .Charging-card {
-  min-width: 400px;
   max-width: 1200px;
 }
 
@@ -17,7 +16,6 @@
 
 .Event-card {
   margin-bottom: 30px;
-  min-width: 400px;
   max-width: 1200px;
 }
 
