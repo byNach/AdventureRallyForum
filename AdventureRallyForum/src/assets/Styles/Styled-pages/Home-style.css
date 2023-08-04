@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: flex-start;
   flex-wrap: nowrap;
   margin-bottom: 30px;
   margin-top: 180px;
@@ -19,7 +20,6 @@
 
 .Left-aside {
   width: 20%;
-  min-width: 200px;
 }
 
 .Filter-results {
@@ -38,18 +38,17 @@
 
 .Central-home {
   width: 50%;
-  min-width: 500px;
-  max-height: 900px;
+  max-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 20px;
   margin-right: 20px;
+  align-items: center;
 }
 
 .Right-aside {
   width: 20%;
-  min-width: 200px;
 }
 
 @media screen and (max-width: 1200px) {
