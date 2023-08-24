@@ -88,7 +88,7 @@
   .Footer-base {
     display: flex;
     justify-content: space-around;
-    height: 5vh;
+    height: 40px;
     padding: 0%;
     width: 100vw;
   }
