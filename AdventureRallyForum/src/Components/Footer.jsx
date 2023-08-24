@@ -56,7 +56,9 @@ const Footer = () => {
             {isSmallScreen && (<p>©2023 ByNach</p>)}
           </div>
           <div className="Social-box">
-            <LinkedInIcon color="white" fontSize="large" />
+            <a href="https://www.linkedin.com/in/ignasi-sales-casanovas-9b2988279" target="_blank" rel="noopener noreferrer">
+              <LinkedInIcon color="white" fontSize="large" />
+            </a>
             <InstagramIcon color="white" fontSize="large" />
           </div>
         </div>
