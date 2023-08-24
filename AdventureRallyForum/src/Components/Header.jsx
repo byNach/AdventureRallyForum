@@ -105,74 +105,74 @@ const Header = () => {
             >
               <List style={{ paddingTop: "20px" }}>
                 <ListItem>
-                  <ListItemIcon style={{ marginBottom: "10px" }}>
-                    <HomeIcon
-                      sx={{
-                        color: "white",
-                        fontSize: "3rem",
-                        marginLeft: "10px",
-                        marginRight: "20px",
-                        backgroundColor: "red",
-                      }}
-                    />
-                  </ListItemIcon>
                   <Link to="/Home" style={{ textDecoration: "none", color: "inherit" }}>
+                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                      <HomeIcon
+                        sx={{
+                          color: "white",
+                          fontSize: "3rem",
+                          marginLeft: "10px",
+                          marginRight: "20px",
+                          backgroundColor: "red",
+                        }}
+                      />
+                    </ListItemIcon>
                     HOME
                   </Link>
                 </ListItem>
                 <Divider style={{ borderColor: "rgba(255,255,255,0.7", borderWidth: "1px" }} />
                 <ListItem>
-                  <ListItemIcon style={{ marginBottom: "10px" }}>
-                    <GroupsIcon
-                      sx={{
-                        color: "white",
-                        fontSize: "3rem",
-                        marginLeft: "10px",
-                        marginRight: "20px",
-                        backgroundColor: "red",
-                      }}
-                    />
-                  </ListItemIcon>
                   <a
                     href="https://adventurerallyforum.flarum.cloud/"
                     target="_blank"
                     rel="noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
                   >
+                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                      <GroupsIcon
+                        sx={{
+                          color: "white",
+                          fontSize: "3rem",
+                          marginLeft: "10px",
+                          marginRight: "20px",
+                          backgroundColor: "red",
+                        }}
+                      />
+                    </ListItemIcon>
                     FORO
                   </a>
                 </ListItem>
                 <Divider style={{ borderColor: "rgba(255,255,255,0.7", borderWidth: "1px" }} />
                 <ListItem>
-                  <ListItemIcon style={{ marginBottom: "10px" }}>
-                    <EventNoteIcon
-                      sx={{
-                        color: "white",
-                        fontSize: "3rem",
-                        marginLeft: "10px",
-                        marginRight: "20px",
-                        backgroundColor: "red",
-                      }}
-                    />
-                  </ListItemIcon>
                   <Link to="/Events" style={{ textDecoration: "none", color: "inherit" }}>
+                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                      <EventNoteIcon
+                        sx={{
+                          color: "white",
+                          fontSize: "3rem",
+                          marginLeft: "10px",
+                          marginRight: "20px",
+                          backgroundColor: "red",
+                        }}
+                      />
+                    </ListItemIcon>
                     EVENTOS
                   </Link>
                 </ListItem>
                 <Divider style={{ borderColor: "rgba(255,255,255,0.7", borderWidth: "1px" }} />
                 <ListItem>
-                  <ListItemIcon style={{ marginBottom: "10px" }}>
-                    <LoginIcon
-                      sx={{
-                        color: "white",
-                        fontSize: "3rem",
-                        marginLeft: "10px",
-                        marginRight: "20px",
-                        backgroundColor: "red",
-                      }}
-                    />
-                  </ListItemIcon>
                   <Link to="/LogInPage" style={{ textDecoration: "none", color: "inherit" }}>
+                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                      <LoginIcon
+                        sx={{
+                          color: "white",
+                          fontSize: "3rem",
+                          marginLeft: "10px",
+                          marginRight: "20px",
+                          backgroundColor: "red",
+                        }}
+                      />
+                    </ListItemIcon>
                     LOGIN
                   </Link>
                 </ListItem>
