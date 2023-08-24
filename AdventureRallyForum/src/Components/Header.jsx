@@ -100,6 +100,7 @@ const Header = () => {
                   color: "rgba(255,255,255)",
                   fontFamily: "monospace",
                   fontSize: "1.5em",
+                  maxWidth: "300px",
                 },
               }}
             >
