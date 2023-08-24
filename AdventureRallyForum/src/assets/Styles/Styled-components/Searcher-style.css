@@ -23,7 +23,6 @@
 }
 
 .searcher-icons {
-  position: relative;
   width: 25px;
   margin-right: 10px;
 }
@@ -56,4 +55,16 @@
   height: 35px;
   font-size: 22px;
   margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .Group-title {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(45deg, transparent 5%, #000000 5%);
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  
 }
