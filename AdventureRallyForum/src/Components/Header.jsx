@@ -11,6 +11,7 @@ import { ListItemIcon } from "@mui/material";
 import HomeIcon from '@mui/icons-material/Home';
 import GroupsIcon from '@mui/icons-material/Groups';
 import LoginIcon from '@mui/icons-material/Login';
+import LogoutIcon from '@mui/icons-material/Logout';
 import EventNoteIcon from '@mui/icons-material/EventNote';
 import Divider from '@mui/material/Divider';
 
@@ -55,6 +56,100 @@ const Header = () => {
           <a href="https://adventurerallyforum.flarum.cloud/" target="_blank" rel="noreferrer">
             <button className="Foro-button">FORO</button>
           </a>
+          <div className="MenuIcon-burger" onClick={toggleDrawer}>
+            <MenuIcon />
+            <Drawer
+              ref={drawerRef}
+              anchor="right"
+              open={isDrawerOpen}
+              onClose={toggleDrawer}
+              PaperProps={{
+                sx: {
+                  width: "50vw",
+                  backgroundColor: "rgba(0,0,0)",
+                  color: "rgba(255,255,255)",
+                  fontFamily: "monospace",
+                  fontSize: "1.5em",
+                  maxWidth: "300px",
+                },
+              }}
+            >
+              <List style={{ paddingTop: "20px" }}>
+                <ListItem>
+                  <Link to="/Home" style={{ textDecoration: "none", color: "inherit" }}>
+                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                      <HomeIcon
+                        sx={{
+                          color: "white",
+                          fontSize: "3rem",
+                          marginLeft: "10px",
+                          marginRight: "20px",
+                          backgroundColor: "red",
+                        }}
+                      />
+                    </ListItemIcon>
+                    HOME
+                  </Link>
+                </ListItem>
+                <Divider style={{ borderColor: "rgba(255,255,255,0.7", borderWidth: "1px" }} />
+                <ListItem>
+                  <a
+                    href="https://adventurerallyforum.flarum.cloud/"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                      <GroupsIcon
+                        sx={{
+                          color: "white",
+                          fontSize: "3rem",
+                          marginLeft: "10px",
+                          marginRight: "20px",
+                          backgroundColor: "red",
+                        }}
+                      />
+                    </ListItemIcon>
+                    FORO
+                  </a>
+                </ListItem>
+                <Divider style={{ borderColor: "rgba(255,255,255,0.7", borderWidth: "1px" }} />
+                <ListItem>
+                  <Link to="/Events" style={{ textDecoration: "none", color: "inherit" }}>
+                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                      <EventNoteIcon
+                        sx={{
+                          color: "white",
+                          fontSize: "3rem",
+                          marginLeft: "10px",
+                          marginRight: "20px",
+                          backgroundColor: "red",
+                        }}
+                      />
+                    </ListItemIcon>
+                    EVENTOS
+                  </Link>
+                </ListItem>
+                <Divider style={{ borderColor: "rgba(255,255,255,0.7", borderWidth: "1px" }} />
+                <ListItem>
+                  <Link to="/LogOutPage" style={{ textDecoration: "none", color: "inherit" }}>
+                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                      <LogoutIcon
+                        sx={{
+                          color: "white",
+                          fontSize: "3rem",
+                          marginLeft: "10px",
+                          marginRight: "20px",
+                          backgroundColor: "red",
+                        }}
+                      />
+                    </ListItemIcon>
+                    LOGOUT
+                  </Link>
+                </ListItem>
+              </List>
+            </Drawer>
+          </div>
         </div>
       </div>
       <div className="Nav-down">
