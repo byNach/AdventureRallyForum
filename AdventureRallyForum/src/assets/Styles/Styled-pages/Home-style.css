@@ -1,6 +1,7 @@
 .HomePage {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   background-image: url("../../Images/benjamin-hassel-oh14CAfw6bw-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -11,13 +12,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: flex-start;
   flex-wrap: nowrap;
   margin-bottom: 30px;
+  margin-top: 180px;
 }
 
 .Left-aside {
   width: 20%;
-  min-width: 200px;
 }
 
 .Filter-results {
@@ -36,24 +38,33 @@
 
 .Central-home {
   width: 50%;
-  min-width: 500px;
+  max-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 20px;
   margin-right: 20px;
+  align-items: center;
 }
 
 .Right-aside {
   width: 20%;
-  min-width: 200px;
 }
 
 @media screen and (max-width: 1200px) {
+  .HomePage {
+    height: auto;
+    background-image: url(../../Images/kaïzo-zed.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   .Content-home {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
   }
 
   .Left-aside,

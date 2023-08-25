@@ -23,7 +23,6 @@
 }
 
 .searcher-icons {
-  position: relative;
   width: 25px;
   margin-right: 10px;
 }
@@ -40,10 +39,10 @@
   justify-content: center;
   align-items: center;
   width: 100px;
-  height: 25px;
-  font-size: 18px;
+  height: 36px;
+  font-size: 22px;
   margin: 0;
-  background: linear-gradient(45deg, transparent 10%, #ffeb10 10%);
+  background: linear-gradient(45deg, transparent 15%, #ffeb10 5%);
   color: #000000;
 }
 
@@ -56,4 +55,16 @@
   height: 35px;
   font-size: 22px;
   margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .Group-title {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(45deg, transparent 5%, #000000 5%);
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  
 }

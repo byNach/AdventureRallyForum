@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: fit-content;
+  width: 350px;
   height: fit-content;
   padding: 50px;
   color: white;
@@ -37,7 +37,7 @@
 .Top-input-text {
   user-select: none;
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -62,7 +62,7 @@
   user-select: none;
   width: 130px;
   height: 35px;
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -78,4 +78,25 @@
 .Or-option {
   user-select: none;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .SignUp-base {
+    width: 350px;
+    max-width: 90vw;
+    padding: 20px;
+  }
+
+  .SignUp-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .Input {
+    margin-bottom: 10px;
+  }
+
+  .Inputs-base {
+    padding: 0;
+  }
 }

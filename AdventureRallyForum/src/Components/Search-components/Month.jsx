@@ -16,7 +16,7 @@ const MonthList = () => {
   };
 
   return (
-    <Box sx={{ minWidth: 120, mb: 2 }}>
+    <Box sx={{ minWidth: 120, mb: 1}}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">Mes</InputLabel>
         <Select

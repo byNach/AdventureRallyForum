@@ -27,6 +27,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: self-start;
+  margin-bottom: 10px;
 }
 
 .Submit-button {

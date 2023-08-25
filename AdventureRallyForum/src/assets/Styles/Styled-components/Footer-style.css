@@ -1,8 +1,8 @@
 .Footer {
-  margin-bottom: 0;
-  margin-top: 0%;
-  position: relative;
+  position: fixed;
+  bottom: 0;
   color: white;
+  width: 100%;
 }
 
 .Footer-top {
@@ -51,8 +51,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-right: 30px;
-  align-items: flex-end;
 }
 
 .Breadcrumbs {
@@ -66,18 +64,40 @@
 .Breadcrumbs li {
   padding: 0 10px;
   line-height: 40px;
-  
+
   &:hover {
     text-decoration: underline;
     cursor: pointer;
   }
 }
+
 .Social-box {
   display: flex;
-  width: 100px;
   height: 60%;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .Footer-top {
+    display: none;
+  }
+
+  .Footer-base {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    padding: 0%;
+    width: 100vw;
+  }
+
+  .Developer-box {
+    font-size: 2hv;
+  }
+
+  .Breadcrumbs {
+    font-size: 2hv;
+  }
 }
