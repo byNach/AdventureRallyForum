@@ -76,8 +76,18 @@ const Header = () => {
             >
               <List style={{ paddingTop: "20px" }}>
                 <ListItem>
+                  <div className="User-box">
+                    <img
+                      className="User-icon"
+                      src="\src\assets\Images\Icons\user.png"
+                    ></img>
+                    <div className="User-name">{auth.user.displayName}</div>
+                  </div>
+                </ListItem>
+                <Divider style={{ borderColor: "rgba(255,255,255,0.7", borderWidth: "1px" }} />
+                <ListItem>
                   <Link to="/Home" style={{ textDecoration: "none", color: "inherit" }}>
-                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                    <ListItemIcon style={{ marginBottom: "10px", marginTop: "10px" }}>
                       <HomeIcon
                         sx={{
                           color: "white",
@@ -99,7 +109,7 @@ const Header = () => {
                     rel="noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
                   >
-                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                    <ListItemIcon style={{ marginBottom: "10px", marginTop: "10px" }}>
                       <GroupsIcon
                         sx={{
                           color: "white",
@@ -116,7 +126,7 @@ const Header = () => {
                 <Divider style={{ borderColor: "rgba(255,255,255,0.7", borderWidth: "1px" }} />
                 <ListItem>
                   <Link to="/Events" style={{ textDecoration: "none", color: "inherit" }}>
-                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                    <ListItemIcon style={{ marginBottom: "10px", marginTop: "10px" }}>
                       <EventNoteIcon
                         sx={{
                           color: "white",
@@ -133,7 +143,7 @@ const Header = () => {
                 <Divider style={{ borderColor: "rgba(255,255,255,0.7", borderWidth: "1px" }} />
                 <ListItem>
                   <Link to="/LogOutPage" style={{ textDecoration: "none", color: "inherit" }}>
-                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                    <ListItemIcon style={{ marginBottom: "10px", marginTop: "10px" }}>
                       <LogoutIcon
                         sx={{
                           color: "white",
@@ -202,7 +212,7 @@ const Header = () => {
               <List style={{ paddingTop: "20px" }}>
                 <ListItem>
                   <Link to="/Home" style={{ textDecoration: "none", color: "inherit" }}>
-                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                    <ListItemIcon style={{ marginBottom: "10px", marginTop: "10px" }}>
                       <HomeIcon
                         sx={{
                           color: "white",
@@ -224,7 +234,7 @@ const Header = () => {
                     rel="noreferrer"
                     style={{ textDecoration: "none", color: "inherit" }}
                   >
-                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                    <ListItemIcon style={{ marginBottom: "10px", marginTop: "10px" }}>
                       <GroupsIcon
                         sx={{
                           color: "white",
@@ -241,7 +251,7 @@ const Header = () => {
                 <Divider style={{ borderColor: "rgba(255,255,255,0.7", borderWidth: "1px" }} />
                 <ListItem>
                   <Link to="/Events" style={{ textDecoration: "none", color: "inherit" }}>
-                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                    <ListItemIcon style={{ marginBottom: "10px", marginTop: "10px" }}>
                       <EventNoteIcon
                         sx={{
                           color: "white",
@@ -258,7 +268,7 @@ const Header = () => {
                 <Divider style={{ borderColor: "rgba(255,255,255,0.7", borderWidth: "1px" }} />
                 <ListItem>
                   <Link to="/LogInPage" style={{ textDecoration: "none", color: "inherit" }}>
-                    <ListItemIcon style={{ marginBottom: "10px" }}>
+                    <ListItemIcon style={{ marginBottom: "10px", marginTop: "10px" }}>
                       <LoginIcon
                         sx={{
                           color: "white",
