@@ -3,6 +3,7 @@
   height: 100vh;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-image: url("../../Images/nikolay.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -14,4 +15,10 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .Center-box {
+    max-width: 90vw;
+  }
 }
